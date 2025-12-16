@@ -104,12 +104,12 @@ portfolio/
 1. Clone repository ini:
 
    ```bash
-   git clone https://github.com/username/portfolio.git
+   git clone https://github.com/quixzler-afk/portfolio-mahasiswa.git
    ```
 2. Masuk ke folder project:
 
    ```bash
-   cd portfolio
+   cd portfolio-mahasiswa
    ```
 3. Buka file `index.html` menggunakan browser.
 
