@@ -3,128 +3,198 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form Validasi Sederhana</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background: linear-gradient(to right, #74ebd5, #acb6e5);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
-
-      .container {
-        background: white;
-        padding: 30px;
-        border-radius: 12px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        width: 350px;
-      }
-
-      h2 {
-        text-align: center;
-        margin-bottom: 20px;
-        color: #333;
-      }
-
-      label {
-        font-weight: bold;
-        display: block;
-        margin-bottom: 6px;
-      }
-
-      input {
-        width: 100%;
-        padding: 8px;
-        margin-bottom: 10px;
-        border: 1px solid #ccc;
-        border-radius: 6px;
-        font-size: 14px;
-      }
-
-      button {
-        width: 100%;
-        padding: 10px;
-        background: #4caf50;
-        color: white;
-        border: none;
-        border-radius: 6px;
-        cursor: pointer;
-        font-size: 16px;
-      }
-
-      button:hover {
-        background: #45a049;
-      }
-
-      .error {
-        color: red;
-        font-size: 13px;
-        margin-bottom: 10px;
-      }
-
-      .success {
-        color: green;
-        font-weight: bold;
-        text-align: center;
-        margin-top: 10px;
-      }
-    </style>
+    <title>Portofolio - Fathurohman Sasikirono</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <h2>Form Validasi</h2>
-      <form id="myForm">
-        <label for="nama">Nama Lengkap</label>
-        <input type="text" id="nama" placeholder="Masukkan nama Anda" />
+    <!-- Background animated gradient -->
+    <div class="bg-gradient"></div>
 
-        <label for="email">Email</label>
-        <input type="text" id="email" placeholder="Masukkan email Anda" />
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-brand">Portfolio Fathur</div>
+        <ul class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
 
-        <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Minimal 6 karakter" />
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="profile-photo">
+            <img
+              src="image/foto-profil.jpeg"
+              alt="Profile Photo"
+              id="profileImg"
+            />
+          </div>
+          <h1 class="hero-title">Fathurohman Sasikirono</h1>
+          <p class="hero-subtitle">Mahasiswa Teknik Informatika</p>
+          <p class="hero-description">
+            Passionate about creating innovative solutions through code
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">Lihat Project</a>
+            <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <button type="submit">Kirim</button>
-        <p id="message" class="error"></p>
-      </form>
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">Tentang Saya</h2>
+        <div class="about-content glass-card">
+          <div class="about-info">
+            <div class="info-item">
+              <span class="info-label">Nama:</span>
+              <span class="info-value">Fathurohman Sasikirono</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">NIM:</span>
+              <span class="info-value">231011401510</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Jurusan:</span>
+              <span class="info-value">Teknik Informatika</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Universitas:</span>
+              <span class="info-value">Universitas Pamulang</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Email:</span>
+              <span class="info-value">fatuur@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Lokasi:</span>
+              <span class="info-value">Tangerang Selatan, Indonesia</span>
+            </div>
+          </div>
+          <div class="about-description">
+            <h3>Biodata</h3>
+            <p>
+              Saya adalah mahasiswa Teknik Informatika yang passionate dalam
+              pengembangan web dan mobile. Memiliki ketertarikan khusus dalam
+              UI/UX Design, Full Stack Development, dan Machine Learning.
+            </p>
+            <p>
+              Selalu antusias untuk belajar teknologi baru dan
+              mengaplikasikannya dalam project-project yang memberikan dampak
+              positif.
+            </p>
+
+            <h3 style="margin-top: 20px">Skills</h3>
+            <div class="skills">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Vite.js</span>
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">PHPMyAdmin</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">UI/UX Design</span>
+              <span class="skill-tag">Altair Studio</span>
+              <span class="skill-tag">RapidMiner</span>
+              <span class="skill-tag">Machine Learning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Projects will be dynamically loaded here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Hubungi Saya</h2>
+        <div class="contact-content glass-card">
+          <div class="contact-info">
+            <div class="contact-item">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>fatuur@gmail.com</span>
+            </div>
+            <div class="contact-item">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+              <span>github.com/quixzler-afk</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Fathurohman Sasikirono. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+      <div class="modal-content glass-card">
+        <span class="close">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <div class="modal-slider">
+          <button class="slider-btn prev">❮</button>
+          <div class="slider-container">
+            <img id="modalImage" src="" alt="Project Image" />
+          </div>
+          <button class="slider-btn next">❯</button>
+        </div>
+        <div class="slider-dots" id="sliderDots"></div>
+        <p id="modalDescription"></p>
+        <div id="modalTech" class="modal-tech"></div>
+      </div>
     </div>
 
-    <script>
-      const form = document.getElementById("myForm");
-      const message = document.getElementById("message");
-
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-
-        const nama = document.getElementById("nama").value.trim();
-        const email = document.getElementById("email").value.trim();
-        const password = document.getElementById("password").value.trim();
-
-        message.textContent = "";
-        message.className = "error";
-
-        if (nama === "" || email === "" || password === "") {
-          message.textContent = "Semua field harus diisi.";
-          return;
-        }
-
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailPattern.test(email)) {
-          message.textContent = "Format email tidak valid.";
-          return;
-        }
-
-        if (password.length < 6) {
-          message.textContent = "Password minimal 6 karakter.";
-          return;
-        }
-
-        message.textContent = "Data berhasil dikirim!";
-        message.className = "success";
-
-        form.reset();
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
